@@ -11,6 +11,10 @@
     <h3>{{ site.description }}</h3>
 
         <ul>
+            {% if site.google_plus_username %}
+            <li><a class="fa fa-2x fa-uisuska" href="http://sif.uin-suska.ac.id//+{{ site.google_plus_username }}"><span class="description">Google +</span></a></li>
+            {% endif %}
+            
             {% if site.github_username %}
             <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
             {% endif %}
